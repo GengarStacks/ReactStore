@@ -26,12 +26,6 @@ function getStepContent(step: number) {
     }
 }
 
-export default function CheckoutPage() {
-    const [activeStep, setActiveStep] = useState(0);
-    const [orderNumber, setOrderNumber] = useState(0);
-    const [loading, setLoading] = useState(false);
-    const dispatch = useAppDispatch();
-
     const currentValidationSchema = validationSchema[activeStep];
     const methods = useForm({
         mode: 'all',
