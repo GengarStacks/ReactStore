@@ -3,6 +3,7 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20220519104003_FixedTheDateTimeIssueThatPostgressHad")]
+    partial class FixedTheDateTimeIssueThatPostgressHad
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,22 +190,14 @@ namespace API.Data.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-                            ConcurrencyStamp = "f5fd7810-d572-4214-bb53-fbd55bdaf825",
-=======
                             ConcurrencyStamp = "7ca2fc18-4097-4d4a-8f92-5af64307b9ca",
->>>>>>> heroku
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-                            ConcurrencyStamp = "17586263-80b7-4379-95a3-2289b58eafb8",
-=======
                             ConcurrencyStamp = "89a15f2e-25d4-4c8a-b419-754188b0e7d1",
->>>>>>> heroku
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
