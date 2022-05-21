@@ -189,10 +189,14 @@ namespace API.Data.Migrations
                         {
                             Id = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             ConcurrencyStamp = "f5fd7810-d572-4214-bb53-fbd55bdaf825",
 =======
                             ConcurrencyStamp = "7ca2fc18-4097-4d4a-8f92-5af64307b9ca",
 >>>>>>> heroku
+=======
+                            ConcurrencyStamp = "ca03d6ea-aa64-42bb-83c4-22ec421fb121",
+>>>>>>> parent of ab5dc2b (Fixed order date format and pushed to heroku)
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
@@ -200,10 +204,14 @@ namespace API.Data.Migrations
                         {
                             Id = 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
                             ConcurrencyStamp = "17586263-80b7-4379-95a3-2289b58eafb8",
 =======
                             ConcurrencyStamp = "89a15f2e-25d4-4c8a-b419-754188b0e7d1",
 >>>>>>> heroku
+=======
+                            ConcurrencyStamp = "f7d75ec9-2108-431e-bdac-dcdde3ac3431",
+>>>>>>> parent of ab5dc2b (Fixed order date format and pushed to heroku)
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
