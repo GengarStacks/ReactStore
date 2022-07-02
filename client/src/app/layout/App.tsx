@@ -65,13 +65,8 @@ function App() {
       <CssBaseline />
       <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
       <Route exact path='/' component={HomePage} />
-<<<<<<< HEAD
-      <Route path={'/(.+)'} render={()=>(
-              <Container sx={{mt :4}}>
-=======
       <Route path={'/(.+)'} render={() => (
               <Container sx={{mt: 4}}>
->>>>>>> heroku
               <Switch>
                 <Route exact path='/catalog' component={Catalog} />
                 <Route path='/catalog/:id' component={ProductDetails} />
@@ -88,10 +83,6 @@ function App() {
               </Switch>
             </Container>
       )}/>
-<<<<<<< HEAD
-
-=======
->>>>>>> heroku
     </ThemeProvider>
   );
 }
