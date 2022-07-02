@@ -3,6 +3,7 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20220529111647_PublicIdAdded")]
+    partial class PublicIdAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,38 +193,14 @@ namespace API.Data.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            ConcurrencyStamp = "f5fd7810-d572-4214-bb53-fbd55bdaf825",
-=======
-                            ConcurrencyStamp = "7ca2fc18-4097-4d4a-8f92-5af64307b9ca",
->>>>>>> heroku
-=======
-                            ConcurrencyStamp = "ca03d6ea-aa64-42bb-83c4-22ec421fb121",
->>>>>>> parent of ab5dc2b (Fixed order date format and pushed to heroku)
-=======
                             ConcurrencyStamp = "692750c3-0fee-4b03-86d4-5c91e09fe1a8",
->>>>>>> Inventory
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
                             Id = 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            ConcurrencyStamp = "17586263-80b7-4379-95a3-2289b58eafb8",
-=======
-                            ConcurrencyStamp = "89a15f2e-25d4-4c8a-b419-754188b0e7d1",
->>>>>>> heroku
-=======
-                            ConcurrencyStamp = "f7d75ec9-2108-431e-bdac-dcdde3ac3431",
->>>>>>> parent of ab5dc2b (Fixed order date format and pushed to heroku)
-=======
                             ConcurrencyStamp = "e48a0c6a-05e3-40fa-8391-0f693511e2ed",
->>>>>>> Inventory
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
