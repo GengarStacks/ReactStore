@@ -4,9 +4,9 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace API.Data.Migrations
+namespace API.Migrations
 {
-    public partial class PostGresInitial : Migration
+    public partial class ManuallyUpdatedHerokuDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -102,7 +102,8 @@ namespace API.Data.Migrations
                     Price = table.Column<long>(type: "bigint", nullable: false),
                     PictureUrl = table.Column<string>(type: "text", nullable: true),
                     Type = table.Column<string>(type: "text", nullable: true),
-                    QuantityInStock = table.Column<int>(type: "integer", nullable: false)
+                    QuantityInStock = table.Column<int>(type: "integer", nullable: false),
+                    PublicId = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -294,8 +295,8 @@ namespace API.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { 1, "ca03d6ea-aa64-42bb-83c4-22ec421fb121", "Member", "MEMBER" },
-                    { 2, "f7d75ec9-2108-431e-bdac-dcdde3ac3431", "Admin", "ADMIN" }
+                    { 1, "2acd8d1b-50cf-405b-ba2f-ff35c0552636", "Member", "MEMBER" },
+                    { 2, "a0211ec7-720e-4fc8-be91-c6b4237d374e", "Admin", "ADMIN" }
                 });
 
             migrationBuilder.CreateIndex(

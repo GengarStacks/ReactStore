@@ -9,11 +9,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace API.Data.Migrations
+namespace API.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20220529111647_PublicIdAdded")]
-    partial class PublicIdAdded
+    [Migration("20220703123930_ManuallyUpdatedHerokuDb")]
+    partial class ManuallyUpdatedHerokuDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -193,14 +193,14 @@ namespace API.Data.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "692750c3-0fee-4b03-86d4-5c91e09fe1a8",
+                            ConcurrencyStamp = "2acd8d1b-50cf-405b-ba2f-ff35c0552636",
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "e48a0c6a-05e3-40fa-8391-0f693511e2ed",
+                            ConcurrencyStamp = "a0211ec7-720e-4fc8-be91-c6b4237d374e",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
